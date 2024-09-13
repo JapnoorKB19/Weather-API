@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Predicting Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div class = "search">
+        <input id = "city" type = "text" placeholder = "Enter City Name" spellcheck="false"/>
+        <button id="searchButton"><img src="./images/search.png"></button>
+      </div>
+      <div class="weather">
+        <img src="./images/rain.png" class="weather-icon">
+        <h1 id="temp"></h1>
+        <h2 id="cityname"></h2>
+      </div>
+      <div class="otherinfo">
+        <div class="col">
+          <img src="./images/humidity.png" alt="Humidity image">
+          <div>
+            <p id="humidity"></p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/wind.png" alt="Humidity image">
+          <div>
+            <p id="wind"></p>
+            <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+    <script src = "index.js" charset = "UTF-8"></script>
+</body>
+</html>
